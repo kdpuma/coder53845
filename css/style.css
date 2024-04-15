@@ -26,8 +26,15 @@
 .nav-link{
     color: #ffffff;
 }
+
 .nav-link:hover{
     color: #ee2b79;
+}
+
+.loguito img{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
 }
 /** FOOTER GENERAL**/
 .footer-final{
@@ -164,14 +171,6 @@
     grid-row: 2/4;
 }
 
-
-
-
-
-
-
-
-
 /** FAQS */
 .faq section{
     border: 2px black solid;
@@ -179,6 +178,15 @@
     height: 200px;
     margin: 50px;
     padding: 20px;
+}
+
+/** INICIAR SESSION */
+
+.centrado{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*! MEDIA QWERTY   esto queda para despues de modificar el menu, volver al video de  grids 2 1:3 */
