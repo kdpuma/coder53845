@@ -1,0 +1,243 @@
+/* esto va siempre en todas los ccs al principio */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /**para que no se dañen medidas con border o pading */
+}
+/**HEADER GENERAL*/
+/* colo del fondo de la navbar */
+.navbar-color{
+    background-color: #231f20;
+}
+/* tamaño de la imagen */
+.navbar-brand img{
+    height: 50%;
+    width: 50%;
+}
+/* color del primer boton */
+.navbar-nav .nav-link.active{
+    color: #ffffff;
+}
+.navbar-nav:hover .nav-link.active:hover{
+    color: #ee2b79;
+}
+/* color del segundo boton */
+.nav-link{
+    color: #ffffff;
+}
+.nav-link:hover{
+    color: #ee2b79;
+}
+/** FOOTER GENERAL**/
+.footer-final{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #231f20;
+    display: flex;
+    flex-direction: column;
+}
+.footer-final h3{
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*! INICIO DE PAGINA*/
+/** INDEX HERO **/
+.contenedor{
+    background-image: url(../img/fondo-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    place-items: center;
+}
+
+.flex-interno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.letra-uno h2{
+    margin-top: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.letra-dos h2{
+    text-align: center;
+    color: #ee2b79;
+    font-size: 3rem;
+    font-weight: 800;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.letra-tres h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.logos-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton-uno{
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #c36;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    color: #fff;
+    fill: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton-dos{
+    margin: 15px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #25d366;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    color: #fff;
+    fill: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-uno{
+    padding: 5px;
+    background-color: #201c59;
+}
+
+.banner-uno h3{
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/**COMPONENTES  PÁGINA */
+
+.contenedor-componentes{
+    height: 880px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 10% 40% 40%;
+    border: 2px black solid;
+    gap: 10px;
+    justify-items: center;  /* centra elementos en orizontal */
+    grid-auto-rows: auto;
+}
+
+.titulo-componentes{
+    grid-column: 1/4;
+    
+}
+
+.buscar{
+    grid-row: 2/4;
+}
+
+
+
+
+
+
+
+
+
+/** FAQS */
+.faq section{
+    border: 2px black solid;
+    width: cover;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+}
+
+/*! MEDIA QWERTY   esto queda para despues de modificar el menu, volver al video de  grids 2 1:3 */
+
+@media screen and (max-width:991px){
+    .img-hero img{
+        display: none;
+    }
+    .contenedor{
+        grid-template-columns: 100%;
+    }
+}       
+
+@media screen and (max-width:847px){
+    .contenedor-componentes{
+        height: 600px;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 5% 40% 40% ;
+    }
+    .card img{
+        height: 200px;
+        width: 200px;
+    }
+}   
+
+@media screen and (max-width:706px){
+    .contenedor{
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:599px){
+    .contenedor-componentes{
+        height: 1100px;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 5% 22% 22% 22% 22%;
+    }
+    .titulo-componentes{
+        grid-column: 1/3;
+        
+    }
+    
+    .buscar{
+        grid-row: 2/6;
+    }
+}
+
+@media screen and (max-width:539px){
+.logos-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-uno h3{
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+}
+    }
