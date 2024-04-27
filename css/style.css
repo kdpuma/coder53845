@@ -5,7 +5,8 @@
     padding: 0;
     box-sizing: border-box;   /**para que no se dañen medidas con border o pading */
 }
-/**HEADER GENERAL*/
+/*!HEADER*/
+/** cusytum barra boostrap */
 /* colo del fondo de la navbar */
 .navbar-color{
     background-color: #231f20;

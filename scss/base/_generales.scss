@@ -1,0 +1,13 @@
+/* esto va siempre en todas los ccs al principio */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /**para que no se dañen medidas con border o pading */
+}
+
+//! VARIABLES
+
+$color-principal:#fff;
+$color-secundario:#ee2b79;
+$color-terciario:#231f20;

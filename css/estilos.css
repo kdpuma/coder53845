@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* esto va siempre en todas los ccs al principio */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /**para que no se dañen medidas con border o pading */ }
+
+.navbar-color {
+  background-color: #231f20; }
+
+/* tamaño de la imagen */
+.navbar-brand img {
+  height: 50%;
+  width: 50%; }
+
+/* color del primer boton */
+.navbar-nav .nav-link.active {
+  color: #fff; }
+
+.navbar-nav:hover .nav-link.active:hover {
+  color: #ee2b79; }
+
+/* color del segundo boton */
+.nav-link {
+  color: #fff; }
+
+.nav-link:hover {
+  color: #ee2b79; }
+
+.loguito img {
+  height: 50px;
+  width: 50px;
+  margin-left: 60px; }
+
+.contenedor {
+  background-image: url(../img/fondo-hero.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  place-items: center; }
+
+.flex-interno {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .flex-interno div h2 {
+    margin-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 5.8rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-optical-sizing: auto;
+    font-style: normal; }
+  .flex-interno div h3 {
+    text-align: center;
+    color: #ee2b79;
+    font-size: 3rem;
+    font-weight: 800;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
+  .flex-interno div h4 {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 400; }
+
+.logos-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.boton-uno {
+  margin: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ee2b79;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  color: #fff;
+  fill: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.boton-dos {
+  margin: 15px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #25d366;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  color: #fff;
+  fill: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.banner-uno {
+  padding: 5px;
+  background-color: #201c59; }
+  .banner-uno section h2 {
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center; }
+
+/** FOOTER GENERAL**/
+.footer-final {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #231f20;
+  display: flex;
+  flex-direction: column; }
+  .footer-final h3 {
+    color: #fff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center; }
