@@ -1,10 +1,10 @@
-/* esto va siempre en todas los ccs al principio */
+ /* esto va siempre en todas los ccs al principio */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;   /**para que no se dañen medidas con border o pading */
-}
+    }
 /*!HEADER*/
 /** cusytum barra boostrap */
 /* colo del fondo de la navbar */
@@ -148,7 +148,7 @@
     font-size: 50px;
     font-weight: 900;
     text-align: center;
-}
+} 
 
 /**COMPONENTES  PÁGINA */
 
@@ -165,7 +165,6 @@
 
 .titulo-componentes{
     grid-column: 1/4;
-    
 }
 
 .buscar{

@@ -11,3 +11,37 @@
 $color-principal:#fff;
 $color-secundario:#ee2b79;
 $color-terciario:#231f20;
+$color-azul: #201c59;
+
+.navbar-color{
+    background-color: $color-terciario;
+}
+/* tamaño de la imagen */
+.navbar-brand img{
+    height: 50%;
+    width: 50%;
+}
+/* color del primer boton */
+.navbar-nav .nav-link.active{
+    color: $color-principal;
+}
+.navbar-nav:hover .nav-link.active:hover{
+    color: $color-secundario;
+}
+/* color del segundo boton */
+.nav-link{
+    color: $color-principal;
+}
+
+.nav-link:hover{
+    color: $color-secundario;
+}
+
+.loguito img{
+    height: 50px;
+    width: 50px;
+    margin-left: 60px;
+}
+
+
+

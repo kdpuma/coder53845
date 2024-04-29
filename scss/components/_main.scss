@@ -62,12 +62,21 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    color: $color-principal;
     fill: $color-principal;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $color-principal;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        color: $color-principal;
+        }
+    &:hover{
+        background-color: $color-azul;
+        color: $color-secundario;
+    }
 }
 .boton-dos{
     margin: 15px;
@@ -84,10 +93,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        color: $color-principal;
+        }
+    &:hover{
+        background-color: $color-azul;
+        color: $color-secundario;
+    }
 }
 .banner-uno{
     padding: 5px;
-    background-color: #201c59;
+    background-color: $color-azul;
     section{
         h2{
             color: $color-principal;
@@ -99,3 +117,245 @@
     }
 }
 
+/** COMPONENTES  PÁGINA */
+
+.contenedor-componentes{
+    height: 880px;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 10% 40% 40%;
+    border: 2px black solid;
+    gap: 10px;
+    justify-items: center;  /* centra elementos en orizontal */
+    grid-auto-rows: auto;
+}
+
+.card img {
+    height: 300px;
+    width: 300px;
+}
+
+.titulo-componentes{
+    grid-column: 1/4;
+}
+
+.buscar{
+    grid-row: 2/4;
+}
+
+.card-body{
+    p{
+        display: flex;
+        justify-content: center;
+        background-color: $color-secundario;
+        font-size: 23px;
+    }
+}
+
+.card {
+    --bs-card-spacer-y: 0rem;
+    --bs-card-spacer-x: 0rem;
+}
+
+.card-text{
+    transition: 0.5s;
+    a{
+        text-decoration: none;
+        color: $color-principal;
+    }
+    &:hover{
+        background-color: $color-azul;
+        color: $color-secundario;
+    }
+}
+/* CONOCENOS */
+
+.heroof{
+    align-content: center;
+    h1{
+        background-color: $color-principal;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+.herito{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/herito.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    div{
+        h2{
+            text-align: center;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 27px;
+            font-weight: 300;
+            color: $color-secundario;
+            padding: 10px;
+        }
+    }
+    div{
+        h3{
+            text-align: center;
+            color: #FFFFFF;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 75px;
+            font-weight: 900;
+        }
+    }
+    .divi{
+        display: flex;
+        justify-content: center;
+        div{
+            width: 40%;
+            align-content: center;
+            margin: 20px;
+            p{
+                color: $color-principal;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+        .imas{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+            img{
+                width: 50%;
+            }
+            &:hover{
+                width: 70%;
+            }
+        }
+        
+    }
+    div{
+        h4{
+            text-align: center;
+            color: $color-principal;
+            text-align: center;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 2rem;
+            line-height: 1.2em;
+            font-weight: 900;
+            margin: 20pxs;
+        }
+    }
+}
+
+.mision{
+    background-color: $color-azul;
+    div{
+        h5{
+            color: $color-secundario;
+            text-align: center;
+            font-family: "Montserrat", Sans-serif;
+            font-size: 2rem;
+            line-height: 1.2em;
+            font-weight: 600;
+            padding: 25px;
+        }
+    }
+    .minimis{
+        display: flex;
+        color: $color-principal;
+        justify-content: center;
+        .borde{
+            width: 30%;
+            display: flex;
+            h6{
+                text-align: center;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 2rem;
+                line-height: 1.2em;
+                font-weight: 900;
+            }
+        }
+        div{
+            margin: 25px;
+            img{
+                display: flex;
+                justify-content: center;
+                width: 100px;
+
+            }
+            p{
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+/** FAQS */
+
+.general{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1{
+        text-align: center;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 20px;
+    }
+    h2{
+        text-align: center;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 20px;
+        text-align: left;
+    } 
+    .cuadro{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-rows: 50px 50px 60px 50px ;
+        border: rgb(45, 44, 44) 1px solid;
+        margin-bottom: 20px;
+        div{
+            border: rgb(45, 44, 44) 1px solid;
+            h3{
+                margin: 5px;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .negrillas{
+                margin: 15px;
+                font-family: "Montserrat", Sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+    
+}
+
+.bannerfinal{
+    background-color: $color-secundario;
+    h4{
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: $color-azul;
+    }
+}
+
+
+/** INICIAR SESSION */
+
+.centrado{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
